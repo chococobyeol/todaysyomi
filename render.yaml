@@ -1,0 +1,11 @@
+staticWebService:
+  # 서비스 이름(아무나 편하게)
+  name: todaysyomi
+  # 정적 사이트 환경임을 명시
+  env: static
+  # publish될 폴더(루트가 index.html 바로 있는 곳이라면 .)
+  publish: .
+  routes:
+    - path: /*
+      headers:
+        Access-Control-Allow-Origin: "*"
